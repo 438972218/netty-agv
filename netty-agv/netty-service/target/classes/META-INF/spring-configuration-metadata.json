@@ -1,0 +1,103 @@
+{
+  "groups": [
+    {
+      "name": "http-client",
+      "type": "com.xdcplus.xdcweb.global.config.HttpClientPoolConfig",
+      "sourceType": "com.xdcplus.xdcweb.global.config.HttpClientPoolConfig"
+    },
+    {
+      "name": "task.pool",
+      "type": "com.xdcplus.xdcweb.global.config.ExecutorConfig",
+      "sourceType": "com.xdcplus.xdcweb.global.config.ExecutorConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "http-client.charset",
+      "type": "java.lang.String",
+      "description": "字符集",
+      "sourceType": "com.xdcplus.xdcweb.global.config.HttpClientPoolConfig",
+      "defaultValue": "UTF-8"
+    },
+    {
+      "name": "http-client.connect-timeout",
+      "type": "java.lang.Integer",
+      "description": "客户端和服务器建立连接超时，默认2s",
+      "sourceType": "com.xdcplus.xdcweb.global.config.HttpClientPoolConfig",
+      "defaultValue": 0
+    },
+    {
+      "name": "http-client.connection-request-timout",
+      "type": "java.lang.Integer",
+      "description": "从连接池获取连接的超时时间,不宜过长,单位ms",
+      "sourceType": "com.xdcplus.xdcweb.global.config.HttpClientPoolConfig",
+      "defaultValue": 200
+    },
+    {
+      "name": "http-client.keep-alive-target-host",
+      "type": "java.util.Map<java.lang.String,java.lang.Integer>",
+      "description": "针对不同的地址,特别设置不同的长连接保持时间",
+      "sourceType": "com.xdcplus.xdcweb.global.config.HttpClientPoolConfig"
+    },
+    {
+      "name": "http-client.keep-alive-time",
+      "type": "java.lang.Integer",
+      "description": "针对不同的地址,特别设置不同的长连接保持时间,单位 s",
+      "sourceType": "com.xdcplus.xdcweb.global.config.HttpClientPoolConfig",
+      "defaultValue": 60
+    },
+    {
+      "name": "http-client.max-connect-per-route",
+      "type": "java.lang.Integer",
+      "description": "同路由的并发数",
+      "sourceType": "com.xdcplus.xdcweb.global.config.HttpClientPoolConfig",
+      "defaultValue": 0
+    },
+    {
+      "name": "http-client.max-total-connect",
+      "type": "java.lang.Integer",
+      "description": "连接池的最大连接数",
+      "sourceType": "com.xdcplus.xdcweb.global.config.HttpClientPoolConfig",
+      "defaultValue": 0
+    },
+    {
+      "name": "http-client.read-timeout",
+      "type": "java.lang.Integer",
+      "description": "指客户端从服务器读取数据包的间隔超时时间,不是总读取时间，默认30s",
+      "sourceType": "com.xdcplus.xdcweb.global.config.HttpClientPoolConfig",
+      "defaultValue": 0
+    },
+    {
+      "name": "http-client.retry-times",
+      "type": "java.lang.Integer",
+      "description": "重试次数,默认2次",
+      "sourceType": "com.xdcplus.xdcweb.global.config.HttpClientPoolConfig",
+      "defaultValue": 2
+    },
+    {
+      "name": "task.pool.core-pool-size",
+      "type": "java.lang.Integer",
+      "sourceType": "com.xdcplus.xdcweb.global.config.ExecutorConfig",
+      "defaultValue": 0
+    },
+    {
+      "name": "task.pool.keep-alive-seconds",
+      "type": "java.lang.Integer",
+      "sourceType": "com.xdcplus.xdcweb.global.config.ExecutorConfig",
+      "defaultValue": 0
+    },
+    {
+      "name": "task.pool.max-pool-size",
+      "type": "java.lang.Integer",
+      "sourceType": "com.xdcplus.xdcweb.global.config.ExecutorConfig",
+      "defaultValue": 0
+    },
+    {
+      "name": "task.pool.queue-capacity",
+      "type": "java.lang.Integer",
+      "sourceType": "com.xdcplus.xdcweb.global.config.ExecutorConfig",
+      "defaultValue": 0
+    }
+  ],
+  "hints": []
+}
